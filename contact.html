@@ -1,0 +1,184 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sherubtse College - Contact Us
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Global font settings */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation hover color */
+    .nav-link:hover {
+      color: yellow;
+    }
+  </style>
+ </head>
+ <body>
+  <header class="bg-[#14213d] text-white py-4">
+   <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="flex items-center space-x-2">
+     <img alt="Sherubtse College Logo" class="h-12 w-12" height="50" src="img/logo.png" width="50"/>
+     <span class="text-2xl font-bold whitespace-nowrap">
+      Sherubtse College
+     </span>
+    </div>
+    <nav class="hidden lg:flex space-x-4 font-bold">
+     <a class="nav-link" href="index.html">Home</a>
+     <a class="nav-link" href="aboutus.html">About</a>
+     <a class="nav-link" href="Admissions.html">Admissions</a>
+     <a class="nav-link" href="academic.html">Academics</a>
+     <a class="nav-link" href="research.html">Research</a>
+     <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="lg:hidden">
+     <button class="text-white focus:outline-none" onclick="toggleMenu()">
+      <i class="fas fa-bars fa-2x"></i>
+     </button>
+    </div>
+   </div>
+   <nav class="lg:hidden hidden" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold">
+     <li><a class="nav-link" href="index.html">Home</a></li>
+     <li><a class="nav-link" href="aboutus.html">About</a></li>
+     <li><a class="nav-link" href="Admissions.html">Admissions</a></li>
+     <li><a class="nav-link" href="academics.html">Academics</a></li>
+     <li><a class="nav-link" href="research.html">Research</a></li>
+     <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+  </header>
+
+  <div class="hero bg-cover bg-center h-96 flex items-center justify-center text-center text-white" style="background-image: url('img/sherubtse\ campus.jpeg');">
+   <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+    <h1 class="text-4xl lg:text-6xl font-bold">
+     Contact Us
+    </h1>
+   </div>
+  </div>
+
+  <section class="location py-16">
+   <div class="container mx-auto px-4">
+    <iframe allowfullscreen="" class="w-full h-96" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.843405935157!2d91.52359!3d27.286781200000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375c73345a4c4fe1%3A0xf6de3f2306d7a1ec!2sSherubtse%20College!5e0!3m2!1sen!2sbt!4v1730821341422!5m2!1sen!2sbt" style="border:0;"></iframe>
+   </div>
+  </section>
+
+  <section class="contact-us py-16">
+   <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <div class="space-y-8">
+      <div class="flex items-center space-x-4">
+       <i class="fa fa-home text-2xl text-[#14213d]"></i>
+       <div>
+        <h5 class="text-xl font-bold">
+         Sherubtse, Kanglung
+        </h5>
+        <p>
+         Trashigang
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <i class="fa fa-phone text-2xl text-[#14213d]"></i>
+       <div>
+        <h5 class="text-xl font-bold">
+         +975-17982078
+        </h5>
+        <p>
+         Monday-Friday, 9am to 5pm
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <i class="fa fa-envelope text-2xl text-[#14213d]"></i>
+       <div>
+        <h5 class="text-xl font-bold">
+         Sherubtse@2024
+        </h5>
+        <p>
+         Email us your query
+        </p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <form id="studentForm">
+       <input class="w-full p-2 mb-4 border rounded" id="studentName" placeholder="Enter Your Name" required="" type="text"/>
+       <input class="w-full p-2 mb-4 border rounded" id="studentEmail" placeholder="Enter email address" required="" type="email"/>
+       <input class="w-full p-2 mb-4 border rounded" id="studentSubject" placeholder="Enter Your subject" required="" type="text"/>
+       <textarea class="w-full p-2 mb-4 border rounded" id="studentMessage" placeholder="Message" required="" rows="8"></textarea>
+       <button class="bg-[#14213d] text-white py-2 px-4 rounded hover:bg-yellow-400 transition duration-300" id="addStudentBtn" type="button">
+        Add Comment
+       </button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section class="student-list py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     Student List
+    </h2>
+    <table class="min-w-full bg-white">
+     <thead>
+      <tr>
+       <th class="py-2 px-4 border-b-2 border-gray-300">Name</th>
+       <th class="py-2 px-4 border-b-2 border-gray-300">Email</th>
+       <th class="py-2 px-4 border-b-2 border-gray-300">Subject</th>
+       <th class="py-2 px-4 border-b-2 border-gray-300">Message</th>
+      </tr>
+     </thead>
+     <tbody id="studentTableBody">
+     </tbody>
+    </table>
+   </div>
+  </section>
+
+  <footer class="bg-[#14213d] text-white py-4 text-center">
+   <p>
+    © 2023 Sherubtse College. All rights reserved.
+   </p>
+  </footer>
+
+  <script>
+   function toggleMenu() {
+    const nav = document.getElementById('mobile-menu');
+    nav.classList.toggle('hidden');
+   }
+
+   $(document).ready(function() {
+    $('#addStudentBtn').click(function() {
+     const name = $('#studentName').val();
+     const email = $('#studentEmail').val();
+     const subject = $('#studentSubject').val();
+     const message = $('#studentMessage').val();
+
+     if (name && email && subject && message) {
+      const newRow = `<tr>
+        <td class="py-2 px-4 border-b border-gray-300">${name}</td>
+        <td class="py-2 px-4 border-b border-gray-300">${email}</td>
+        <td class="py-2 px-4 border-b border-gray-300">${subject}</td>
+        <td class="py-2 px-4 border-b border-gray-300">${message}</td>
+      </tr>`;
+
+      $('#studentTableBody').append(newRow);
+
+      // Clear the form fields
+      $('#studentForm')[0].reset();
+     }
+    });
+   });
+  </script>
+ </body>
+</html>

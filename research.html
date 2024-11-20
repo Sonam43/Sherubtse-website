@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sherubtse College - Research</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header, footer {
+        background-color: #14213d;
+      }
+      nav a:hover {
+        color: yellow; /* Hover effect for nav links */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center space-x-2">
+          <img alt="Sherubtse College Logo" class="h-12 w-12" height="50" src="img/logo.png" width="50"/>
+          <span class="text-2xl font-bold whitespace-nowrap">
+            Sherubtse College
+          </span>
+        </div>
+        <nav class="hidden lg:flex space-x-4 font-bold">
+          <a class="hover:text-yellow-400" href="index.html">Home</a>
+          <a class="hover:text-yellow-400" href="aboutus.html">About</a>
+          <a class="hover:text-yellow-400" href="Admissions.html">Admissions</a>
+          <a class="hover:text-yellow-400" href="academic.html">Academics</a>
+          <a class="hover:text-yellow-400" href="research.html">Research</a>
+          <a class="hover:text-yellow-400" href="contact.html">Contact</a>
+        </nav>
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none" onclick="toggleMenu()">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="lg:hidden hidden" id="mobile-menu">
+        <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold">
+          <li><a class="hover:text-yellow-400" href="index.html">Home</a></li>
+          <li><a class="hover:text-yellow-400" href="aboutus.html">About</a></li>
+          <li><a class="hover:text-yellow-400" href="Admissions.html">Admissions</a></li>
+          <li><a class="hover:text-yellow-400" href="academic.html">Academics</a></li>
+          <li><a class="hover:text-yellow-400" href="research.html">Research</a></li>
+          <li><a class="hover:text-yellow-400" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <div class="hero bg-cover bg-center h-96 flex items-center justify-center text-center text-white" style="background-image: url('img/sherubste.jpeg');">
+      <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+        <h1 class="text-4xl lg:text-6xl font-bold">Research</h1>
+        <p class="text-xl lg:text-2xl mt-4">Discover Our Research Initiatives</p>
+      </div>
+    </div>
+    
+    <!-- Research Overview Section -->
+    <section class="research-overview py-16 bg-gray-100">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold mb-8">Research Overview</h2>
+        <p class="mb-8">
+          At Sherubtse College, we are committed to advancing knowledge through cutting-edge research. Our faculty and students engage in a wide range of research activities that address critical issues and contribute to the betterment of society.
+        </p>
+        <a class="inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-yellow-400 transition duration-300" href="Rrmb.html">
+          Learn More
+        </a>
+      </div>
+    </section>
+    
+    <!-- Research Areas Section -->
+    <section class="research-areas py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Research Areas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center">
+            <img alt="Image representing Environmental Research" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/environmental ressearch.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Environmental Research</h3>
+            <p class="mb-4">
+              Our environmental research focuses on understanding and addressing the challenges of climate change, biodiversity loss, and sustainable development.
+            </p>
+          </div>
+          <div class="text-center">
+            <img alt="Image representing Social Sciences Research" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/social science.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Social Sciences Research</h3>
+            <p class="mb-4">
+              Our social sciences research explores the complexities of human behavior, social structures, and cultural dynamics to inform policy and practice.
+            </p>
+          </div>
+          <div class="text-center">
+            <img alt="Image representing Technology and Innovation Research" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/tecnology.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Technology and Innovation Research</h3>
+            <p class="mb-4">
+              Our research in technology and innovation aims to develop new solutions and advancements in fields such as computer science, engineering, and information technology.
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a class="inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-yellow-400 transition duration-300" href="Rlm.html">
+            Learn More About Our Research
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Research Projects Section -->
+    <section class="research-projects py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Research Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center">
+            <img alt="Image representing a research project on climate change" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/rclimatechange.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Climate Change Adaptation</h3>
+            <p class="mb-4">
+              This project focuses on developing strategies to help communities adapt to the impacts of climate change, ensuring resilience and sustainability.
+            </p>
+            <a class="inline-block text-blue-900 hover:text-yellow-400 transition duration-300" href="Rrmb2.html">
+              Read More
+            </a>
+          </div>
+          <div class="text-center">
+            <img alt="Image representing a research project on social justice" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/social justic.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Social Justice and Equity</h3>
+            <p class="mb-4">
+              This project examines issues of social justice and equity, aiming to promote inclusive policies and practices that benefit all members of society.
+            </p>
+            <a class="inline-block text-blue-900 hover:text-yellow-400 transition duration-300" href="Rrmb3.html">
+              Read More
+            </a>
+          </div>
+          <div class="text-center">
+            <img alt="Image representing a research project on artificial intelligence" class="w-full h-40 object-cover rounded-lg mb-4" height="150" src="img/ai.jpeg" width="200"/>
+            <h3 class="text-xl font-bold mb-2">Artificial Intelligence and Ethics</h3>
+            <p class="mb-4">
+              This project explores the ethical implications of artificial intelligence, aiming to develop guidelines for responsible AI development and use.
+            </p>
+            <a class="inline-block text-blue-900 hover:text-yellow-400 transition duration-300" href="Rrmb4.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="text-white py-4 text-center">
+      <p>© 2023 Sherubtse College. All rights reserved.</p>
+    </footer>
+    
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('mobile-menu');
+        nav.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #14213d;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+header nav ul li a:hover {
+    color:yellow; /* Change to any color you prefer on hover */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.hero {
+    background: url('img/sherubste\ pp.jpeg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.about-section, .courses-section, .gallery-section, .news-section, .team-section {
+    padding: 40px 20px;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about-section .read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.read-more {
+    background-color: #1e3a8a; /* Equivalent to bg-blue-900 */
+    color: white;
+    padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+    border-radius: 0.375rem; /* Equivalent to rounded */
+    transition: background-color 0.3s ease; /* Equivalent to transition duration-300 */
+}
+
+/* Hover effect */
+.read-more:hover {
+    background-color: #fbbf24; /* Equivalent to hover:bg-yellow-400 */
+}
+.courses-section .container, .gallery-section .container, .news-section .container, .team-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.courses-section h2, .gallery-section h2, .news-section h2, .team-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.courses-section .course-item, .news-section .news-item {
+    display: flex;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.courses-section .course-item img, .news-section .news-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.courses-section .course-item .content, .news-section .news-item .content {
+    flex: 1;
+}
+
+.courses-section .course-item .content h3, .news-section .news-item .content h3 {
+    margin: 0 0 10px;
+}
+
+.courses-section .course-item .content p, .news-section .news-item .content p {
+    margin: 0;
+}
+
+.gallery-section .gallery-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-section .gallery-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.gallery-section .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.team-section .team-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-section .team-member {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-section .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.news-section .read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.read-more {
+    background-color: #1e3a8a; /* Equivalent to bg-blue-900 */
+    color: white;
+    padding: 0.5rem 1rem; /* Equivalent to py-2 px-4 */
+    border-radius: 0.375rem; /* Equivalent to rounded */
+    transition: background-color 0.3s ease; /* Equivalent to transition duration-300 */
+}
+
+/* Hover effect */
+.read-more:hover {
+    background-color: #fbbf24; /* Equivalent to hover:bg-yellow-400 */
+}
+
+
+footer {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav {
+        display: none;
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .courses-section .course-item, .news-section .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .courses-section .course-item img, .news-section .news-item img {
+        margin-bottom: 10px;
+    }
+    .gallery-section .gallery-row, .team-section .team-row {
+        flex-direction: column;
+    }
+    .gallery-section .gallery-item, .team-section .team-member {
+        margin: 10px 0;
+    }
+}
+

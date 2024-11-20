@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sherubtse College - Research Overview</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header, footer {
+        background-color: #14213d;
+      }
+      nav a:hover {
+        color: yellow; /* Nav hover effect */
+      }
+      .img-fit {
+        object-fit: contain;
+        width: 100%; /* Ensures full width within container */
+        height: auto; /* Adjusts height to preserve aspect ratio */
+        max-height: 400px; /* Keeps the image at a reasonable size */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-[#14213d] text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center space-x-2">
+          <img alt="Sherubtse College Logo" class="h-12 w-12" height="50" src="img/logo.png" width="50"/>
+          <span class="text-2xl font-bold whitespace-nowrap">
+            Sherubtse College
+          </span>
+        </div>
+        <nav class="hidden lg:flex space-x-4 font-bold">
+          <a class="hover:text-yellow-400" href="index.html">Home</a>
+          <a class="hover:text-yellow-400" href="aboutus.html">About</a>
+          <a class="hover:text-yellow-400" href="Admissions.html">Admissions</a>
+          <a class="hover:text-yellow-400" href="academic.html">Academics</a>
+          <a class="hover:text-yellow-400" href="research.html">Research</a>
+          <a class="hover:text-yellow-400" href="contact.html">Contact</a>
+        </nav>
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none" onclick="toggleMenu()">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="lg:hidden hidden" id="mobile-menu">
+        <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold">
+          <li><a class="hover:text-yellow-400" href="index.html">Home</a></li>
+          <li><a class="hover:text-yellow-400" href="aboutus.html">About</a></li>
+          <li><a class="hover:text-yellow-400" href="Admissions.html">Admissions</a></li>
+          <li><a class="hover:text-yellow-400" href="academic.html">Academics</a></li>
+          <li><a class="hover:text-yellow-400" href="research.html">Research</a></li>
+          <li><a class="hover:text-yellow-400" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="research-overview py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Research Overview</h2>
+        <p class="mb-8 text-center">
+          At Sherubtse College, we are committed to advancing knowledge through cutting-edge research. Our faculty and students engage in a wide range of research activities that address critical issues and contribute to the betterment of society.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img alt="Image representing research at Sherubtse College" class="img-fit rounded-lg" height="400" src="img/sherubste pp.jpeg" width="600"/>
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">Our Commitment to Research</h3>
+            <p class="mb-4">
+              Sherubtse College is dedicated to fostering a research environment that encourages innovation, critical thinking, and collaboration. Our research initiatives span various disciplines, including environmental science, social sciences, technology, and more.
+            </p>
+            <p class="mb-4">
+              We believe that research is a vital component of higher education, and we strive to provide our students and faculty with the resources and support they need to pursue their research interests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-initiatives py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Research Initiatives</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center">
+            <i class="fas fa-leaf fa-3x text-blue-900 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Environmental Research</h3>
+            <p>
+              Our environmental research focuses on understanding and addressing the challenges of climate change, biodiversity loss, and sustainable development.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-users fa-3x text-blue-900 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Social Sciences Research</h3>
+            <p>
+              Our social sciences research explores the complexities of human behavior, social structures, and cultural dynamics to inform policy and practice.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-microchip fa-3x text-blue-900 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Technology and Innovation Research</h3>
+            <p>
+              Our research in technology and innovation aims to develop new solutions and advancements in fields such as computer science, engineering, and information technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-impact py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Impact of Our Research</h2>
+        <p class="mb-8 text-center">
+          The research conducted at Sherubtse College has a significant impact on both local and global communities. Our research findings contribute to the development of policies, practices, and technologies that address pressing societal challenges.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <img alt="Image representing the impact of research at Sherubtse College" class="img-fit rounded-lg" height="400" src="img/researcher sir.jpeg" width="600"/>
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">Making a Difference</h3>
+            <p class="mb-4">
+              Our research projects have led to significant advancements in various fields, including environmental conservation, social justice, and technological innovation. We are proud of the positive impact our research has on society and the environment.
+            </p>
+            <p class="mb-4">
+              By fostering a culture of research excellence, Sherubtse College is committed to making a meaningful difference in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#14213d] text-white py-4 text-center">
+      <p>© 2023 Sherubtse College. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('mobile-menu');
+        nav.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>

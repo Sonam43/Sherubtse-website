@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sherubtse College - Admissions
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   body {
+     font-family: 'Roboto', sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+
+   header, footer {
+     background-color: #14213d;
+   }
+
+   nav a:hover {
+     color: yellow;
+   }
+  </style>
+ </head>
+ <body class="font-roboto">
+  <header class="bg-[#14213d] text-white py-4">
+   <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="flex items-center space-x-2">
+     <img alt="Sherubtse College Logo" class="h-12 w-12" height="50" src="img/logo.png" width="50"/>
+     <span class="text-2xl font-bold whitespace-nowrap">
+      Sherubtse College
+     </span>
+    </div>
+    <nav class="hidden lg:flex space-x-4 font-bold text-lg" style="font-family: 'Roboto', sans-serif;">
+     <a class="hover:text-yellow-400" href="index.html">
+      Home
+     </a>
+     <a class="hover:text-yellow-400" href="aboutus.html">
+      About
+     </a>
+     <a class="hover:text-yellow-400" href="Admissions.html">
+      Admissions
+     </a>
+     <a class="hover:text-yellow-400" href="academic.html">
+      Academics
+     </a>
+     <a class="hover:text-yellow-400" href="research.html">
+      Research
+     </a>
+     <a class="hover:text-yellow-400" href="aboutus.html">
+      Contact
+     </a>
+    </nav>
+    <div class="lg:hidden">
+     <button class="text-white focus:outline-none" onclick="toggleMenu()">
+      <i class="fas fa-bars fa-2x"></i>
+     </button>
+    </div>
+   </div>
+   <nav class="lg:hidden hidden" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold text-lg" style="font-family: 'Roboto', sans-serif;">
+     <li>
+      <a class="hover:text-yellow-400" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-400" href="aboutus.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-400" href="Admissions.html">
+       Admissions
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-400" href="academic.html">
+       Academics
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-400" href="research.html">
+       Research
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-yellow-400" href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <div class="hero bg-cover bg-center h-96 flex items-center justify-center text-center text-white" style="background-image: url('img/admissionhead.jpeg');">
+   <div>
+    <h1 class="text-4xl lg:text-6xl font-bold">
+     Admissions
+    </h1>
+    <p class="text-xl lg:text-2xl mt-4">
+     Join Sherubtse College Today
+    </p>
+   </div>
+  </div>
+  <section class="admissions-info py-16 bg-gray-100">
+   <div class="container mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-8">
+     Admissions Information
+    </h2>
+    <p class="mb-8">
+     At Sherubtse College, we offer a wide range of undergraduate and postgraduate programs designed to help you achieve your academic and career goals. Our admissions process is designed to be straightforward and transparent, ensuring that all prospective students have the opportunity to join our vibrant academic community.
+    </p>
+    <a class="inline-block bg-[#003366] text-white py-2 px-4 rounded hover:bg-yellow-400 transition duration-300" href="admissionrmb.html">
+     Learn More
+    </a>
+   </div>
+  </section>
+  <section class="why-sherubtse py-16">
+   <div class="container mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-8">
+     Why Sherubtse?
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-graduation-cap fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Academic Excellence
+      </h3>
+      <p>
+       Sherubtse College has a long-standing tradition of academic excellence, offering a diverse range of programs that are designed to challenge and inspire students.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-chalkboard-teacher fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Experienced Faculty
+      </h3>
+      <p>
+       Our faculty members are experts in their fields, dedicated to providing high-quality education and mentorship to help students achieve their full potential.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-globe fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Global Opportunities
+      </h3>
+      <p>
+       We offer numerous opportunities for students to engage in international programs, research, and collaborations, preparing them for a globalized world.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-users fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Vibrant Campus Life
+      </h3>
+      <p>
+       Our campus is home to a diverse and active student community, with numerous clubs, organizations, and events that enrich the college experience.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-leaf fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Beautiful Campus
+      </h3>
+      <p>
+       Nestled in the scenic landscapes of Bhutan, our campus provides a serene and inspiring environment for learning and personal growth.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <i class="fas fa-handshake fa-3x text-[#003366] mb-4"></i>
+      <h3 class="text-xl font-bold mb-2">
+       Strong Alumni Network
+      </h3>
+      <p>
+       Our alumni network is a testament to the success of our graduates, providing valuable connections and opportunities for current students.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="admissions-form py-16">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     Apply Now
+    </h2>
+    <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+       Full Name
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your full name"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="course">
+       Course Applied For
+      </label>
+      <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course">
+       <option>Select Course</option>
+       <option>Undergraduate Program</option>
+       <option>Postgraduate Program</option>
+      </select>
+     </div>
+     <div class="flex justify-center mt-8">
+      <button class="bg-[#003366] text-white py-2 px-6 rounded hover:bg-yellow-400 transition duration-300">
+       Submit
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  <footer class="bg-[#14213d] text-white py-4">
+   <div class="container mx-auto text-center">
+    <p>&copy; 2024 Sherubtse College. All Rights Reserved.</p>
+   </div>
+  </footer>
+  <script>
+   function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+   }
+  </script>
+ </body>
+</html>

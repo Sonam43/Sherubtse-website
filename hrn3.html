@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sherubtse College - Event Details</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #14213d; /* Keep body background as original */
+    }
+
+    header {
+      background-color: #14213d !important; /* Use header background color */
+    }
+
+    footer {
+      background-color: #14213d !important; /* Use footer background color */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+  </style>
+</head>
+<body class="font-roboto">
+  <header class="text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center space-x-2">
+        <img
+          src="img/logo.png"
+          alt="Sherubtse College Logo"
+          class="h-12 w-12"
+          width="50"
+          height="50"
+        />
+        <span class="text-2xl font-bold whitespace-nowrap">
+          Sherubtse College
+        </span>
+      </div>
+      <nav class="hidden lg:flex space-x-4 font-bold">
+        <a class="hover:text-yellow" href="index.html">Home</a>
+        <a class="hover:text-yellow" href="aboutus.html">About</a>
+        <a class="hover:text-yellow" href="Admissions.html">Admissions</a>
+        <a class="hover:text-yellow" href="academic.html">Academics</a>
+        <a class="hover:text-yellow" href="research.html">Research</a>
+        <a class="hover:text-yellow" href="contact.html">Contact</a>
+      </nav>
+      <div class="lg:hidden">
+        <button class="text-white focus:outline-none" onclick="toggleMenu()">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <nav class="lg:hidden hidden" id="mobile-menu">
+      <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold">
+        <li><a class="hover:text-yellow" href="index.html">Home</a></li>
+        <li><a class="hover:text-yellow" href="aboutus.html">About</a></li>
+        <li>
+          <a class="hover:text-yellow" href="Admissions.html">Admissions</a>
+        </li>
+        <li><a class="hover:text-yellow" href="academic.html">Academics</a></li>
+        <li><a class="hover:text-yellow" href="research.html">Research</a></li>
+        <li><a class="hover:text-yellow" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="event-details py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Workshop on Symmetries, Data Science and AI for Physicists
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div>
+          <img
+            src="img/event 2.jpeg"
+            alt="Image of a seminar event at Sherubtse College"
+            class="w-full h-64 object-cover rounded-lg mb-4"
+            width="600"
+            height="400"
+          />
+          <p class="mb-4">
+            International Center for Theoretical Physics, Physics Without
+            Frontiers working with the University of Sussex, and DISCnet are
+            organising a 5-day intensive workshop in Symmetries, Data Science,
+            and AI for Physicists for over 90 physics students of Sherubtse
+            College.
+          </p>
+          <p class="mb-4">Date: 25th November 2023</p>
+          <p class="mb-4">Time: 10:00 AM - 4:00 PM</p>
+          <p class="mb-4">Venue: Sherubtse College Auditorium</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src="img/event2one.jpeg"
+            alt="Image of a speaker at the seminar"
+            class="w-full h-40 object-cover rounded-lg"
+            width="200"
+            height="150"
+          />
+          <img
+            src="img/event2two.jpeg"
+            alt="Image of attendees at the seminar"
+            class="w-full h-40 object-cover rounded-lg"
+            width="200"
+            height="150"
+          />
+          <img
+            src="img/event2three.jpeg"
+            alt="Image of a panel discussion at the seminar"
+            class="w-full h-40 object-cover rounded-lg"
+            width="200"
+            height="150"
+          />
+          <img
+            src="img/event2four.jpeg"
+            alt="Image of a presentation at the seminar"
+            class="w-full h-40 object-cover rounded-lg"
+            width="200"
+            height="150"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-white py-4 text-center">
+    <p>© 2023 Sherubtse College. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-menu');
+      nav.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

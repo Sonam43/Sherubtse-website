@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sherubtse College - Research Areas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header, footer {
+        background-color: #14213d;
+      }
+      nav a:hover {
+        color: yellow; /* Hover effect for nav links */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center space-x-2">
+          <img alt="Sherubtse College Logo" class="h-12 w-12" height="50" src="img/logo.png" width="50"/>
+          <span class="text-2xl font-bold whitespace-nowrap">
+            Sherubtse College
+          </span>
+        </div>
+        <nav class="hidden lg:flex space-x-4 font-bold">
+          <a class="hover:text-yellow-400" href="index.html">Home</a>
+          <a class="hover:text-yellow-400" href="aboutus.html">About</a>
+          <a class="hover:text-yellow-400" href="Admissions.html">Admissions</a>
+          <a class="hover:text-yellow-400" href="academic.html">Academics</a>
+          <a class="hover:text-yellow-400" href="research.html">Research</a>
+          <a class="hover:text-yellow-400" href="contact.html">Contact</a>
+        </nav>
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none" onclick="toggleMenu()">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="lg:hidden hidden" id="mobile-menu">
+        <ul class="flex flex-col space-y-4 mt-4 px-4 font-bold">
+          <li><a class="hover:text-yellow-400" href="index.html">Home</a></li>
+          <li><a class="hover:text-yellow-400" href="aboutus.html">About</a></li>
+          <li><a class="hover:text-yellow-400" href="Admissions.html">Admissions</a></li>
+          <li><a class="hover:text-yellow-400" href="academic.html">Academics</a></li>
+          <li><a class="hover:text-yellow-400" href="research.html">Research</a></li>
+          <li><a class="hover:text-yellow-400" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="research-area py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          RESEARCH
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <img alt="Image representing Environmental Research" class="w-full h-64 object-cover rounded-lg" height="400" src="img/environmental ressearch.jpeg" width="600"/>
+          </div>
+          <div>
+            <img alt="Image representing Social Sciences Research" class="w-full h-64 object-cover rounded-lg" height="400" src="img/social science.jpeg" width="600"/>
+          </div>
+          <div>
+            <img alt="Image representing Technology and Innovation Research" class="w-full h-64 object-cover rounded-lg" height="400" src="img/tecnology.jpeg" width="600"/>
+          </div>
+        </div>
+        <div class="mt-8">
+          <p class="mb-4">
+            Our environmental research focuses on understanding and addressing the challenges of climate change, biodiversity loss, and sustainable development. We aim to develop innovative solutions that promote environmental sustainability and resilience.
+          </p>
+          <p class="mb-4">
+            Our research projects include studying the impacts of climate change on local ecosystems, developing strategies for biodiversity conservation, and exploring sustainable practices in agriculture and resource management.
+          </p>
+          <p class="mb-4">
+            By collaborating with local communities, government agencies, and international organizations, we strive to make a positive impact on the environment and contribute to global efforts in combating climate change.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-[#14213d] text-white py-4 text-center">
+      <p>© 2023 Sherubtse College. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('mobile-menu');
+        nav.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>

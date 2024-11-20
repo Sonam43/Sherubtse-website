@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #14213d;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+header .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: yellow; /* Only navigation links change to yellow on hover */
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+.about-hero {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(120, 125, 146, 0.7)), url(img/vision\ image.jpg);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(rgb(97, 93, 93), rgb(162, 172, 162), rgb(64, 64, 70), alpha);
+}
+.about-hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.about-section, .mission-section, .history-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+.about-section .container, .mission-section .container, .history-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-section h2, .mission-section h2, .history-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-section p, .mission-section p, .history-section p {
+    text-align: center;
+}
+.about-section img, .mission-section img, .history-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav {
+        display: none;
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
